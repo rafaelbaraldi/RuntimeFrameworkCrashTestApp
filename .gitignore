@@ -1,4 +1,16 @@
 
+
+.DS_Store
+
+build/
+*.pbxuser
+xcuserdata/
+*.xccheckout
+DerivedData
+
 Pods/
 *.xcworkspace
 
+archivePathSimulator/
+archivePathDevice/
+build_data/

@@ -1,1 +1,8 @@
 # RuntimeFrameworkCrashTestApp
+
+DependencyAsPod
+DynamicFrameworkSample
+
+RuntimeFrameworkCrashTestApp
+RuntimeFrameworkCrashTestApp.xcodeproj
+RuntimeFrameworkCrashTestApp.xcworkspace

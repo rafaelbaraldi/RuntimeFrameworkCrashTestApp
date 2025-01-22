@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   DependencyAsPod: e1fe748a3778c23264c787ed19a2db6df388eb0a
-  DynamicFrameworkSample: 0344f62ffceb8b443156dfacc639be80e66e2a58
+  DynamicFrameworkSample: 82f7748bf0f0b349a95a4b8b372eedf84e292b2d
 
 PODFILE CHECKSUM: 902cc2c6519308be0a59d69f7548ff3b0fc18457
 
