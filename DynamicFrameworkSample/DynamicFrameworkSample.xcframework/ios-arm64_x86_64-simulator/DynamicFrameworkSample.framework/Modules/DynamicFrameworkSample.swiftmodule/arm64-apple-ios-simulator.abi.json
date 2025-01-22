@@ -1,0 +1,56 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "DependencyAsPod",
+        "printedName": "DependencyAsPod",
+        "declKind": "Import",
+        "moduleName": "DynamicFrameworkSample"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DynamicFrameworkClass",
+        "printedName": "DynamicFrameworkClass",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getDefaultText",
+            "printedName": "getDefaultText()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22DynamicFrameworkSample0aB5ClassC14getDefaultTextSSyFZ",
+            "mangledName": "$s22DynamicFrameworkSample0aB5ClassC14getDefaultTextSSyFZ",
+            "moduleName": "DynamicFrameworkSample",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:22DynamicFrameworkSample0aB5ClassC",
+        "mangledName": "$s22DynamicFrameworkSample0aB5ClassC",
+        "moduleName": "DynamicFrameworkSample",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}
