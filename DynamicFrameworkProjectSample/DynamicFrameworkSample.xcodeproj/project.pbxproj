@@ -3,20 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2300EEF22D42A88200B26006 /* TransitiveDependency in Frameworks */ = {isa = PBXBuildFile; productRef = 2300EEF12D42A88200B26006 /* TransitiveDependency */; };
 		23F54DEB2D3EBE4C005560FC /* DynamicFrameworkClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F54DEA2D3EBE4C005560FC /* DynamicFrameworkClass.swift */; };
-		E82FE2F74B0BF5ABEAC0017F /* Pods_DynamicFrameworkSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784F816974C6E9F1D4ADAFC1 /* Pods_DynamicFrameworkSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		23F54DD02D3EBE2D005560FC /* DynamicFrameworkSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DynamicFrameworkSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F54DEA2D3EBE4C005560FC /* DynamicFrameworkClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFrameworkClass.swift; sourceTree = "<group>"; };
-		37CCE6B7F8418F728DB7DDB9 /* Pods-DynamicFrameworkSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicFrameworkSample.release.xcconfig"; path = "Target Support Files/Pods-DynamicFrameworkSample/Pods-DynamicFrameworkSample.release.xcconfig"; sourceTree = "<group>"; };
-		74FAF1702C4AC001941A296D /* Pods-DynamicFrameworkSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicFrameworkSample.debug.xcconfig"; path = "Target Support Files/Pods-DynamicFrameworkSample/Pods-DynamicFrameworkSample.debug.xcconfig"; sourceTree = "<group>"; };
-		784F816974C6E9F1D4ADAFC1 /* Pods_DynamicFrameworkSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DynamicFrameworkSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,7 +21,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E82FE2F74B0BF5ABEAC0017F /* Pods_DynamicFrameworkSample.framework in Frameworks */,
+				2300EEF22D42A88200B26006 /* TransitiveDependency in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,8 +33,6 @@
 			children = (
 				23F54DD22D3EBE2D005560FC /* DynamicFrameworkSample */,
 				23F54DD12D3EBE2D005560FC /* Products */,
-				509CD98421A87BE2887471E4 /* Pods */,
-				D33E03B8F29D1D7FB1D2C4CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,23 +52,6 @@
 			path = DynamicFrameworkSample;
 			sourceTree = "<group>";
 		};
-		509CD98421A87BE2887471E4 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				74FAF1702C4AC001941A296D /* Pods-DynamicFrameworkSample.debug.xcconfig */,
-				37CCE6B7F8418F728DB7DDB9 /* Pods-DynamicFrameworkSample.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		D33E03B8F29D1D7FB1D2C4CD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				784F816974C6E9F1D4ADAFC1 /* Pods_DynamicFrameworkSample.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -91,7 +69,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23F54DE42D3EBE2D005560FC /* Build configuration list for PBXNativeTarget "DynamicFrameworkSample" */;
 			buildPhases = (
-				7042ECDB3657975A9FD194C0 /* [CP] Check Pods Manifest.lock */,
 				23F54DCB2D3EBE2D005560FC /* Headers */,
 				23F54DCC2D3EBE2D005560FC /* Sources */,
 				23F54DCD2D3EBE2D005560FC /* Frameworks */,
@@ -102,6 +79,9 @@
 			dependencies = (
 			);
 			name = DynamicFrameworkSample;
+			packageProductDependencies = (
+				2300EEF12D42A88200B26006 /* TransitiveDependency */,
+			);
 			productName = DynamicFrameworkSample;
 			productReference = 23F54DD02D3EBE2D005560FC /* DynamicFrameworkSample.framework */;
 			productType = "com.apple.product-type.framework";
@@ -130,6 +110,9 @@
 				Base,
 			);
 			mainGroup = 23F54DC62D3EBE2D005560FC;
+			packageReferences = (
+				2300EEF02D42A88200B26006 /* XCLocalSwiftPackageReference "../TransitiveDependency" */,
+			);
 			productRefGroup = 23F54DD12D3EBE2D005560FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -148,31 +131,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7042ECDB3657975A9FD194C0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DynamicFrameworkSample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		23F54DCC2D3EBE2D005560FC /* Sources */ = {
@@ -313,7 +271,6 @@
 		};
 		23F54DE52D3EBE2D005560FC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74FAF1702C4AC001941A296D /* Pods-DynamicFrameworkSample.debug.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -348,7 +305,6 @@
 		};
 		23F54DE62D3EBE2D005560FC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37CCE6B7F8418F728DB7DDB9 /* Pods-DynamicFrameworkSample.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -402,6 +358,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		2300EEF02D42A88200B26006 /* XCLocalSwiftPackageReference "../TransitiveDependency" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../TransitiveDependency;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2300EEF12D42A88200B26006 /* TransitiveDependency */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TransitiveDependency;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 23F54DC72D3EBE2D005560FC /* Project object */;
 }

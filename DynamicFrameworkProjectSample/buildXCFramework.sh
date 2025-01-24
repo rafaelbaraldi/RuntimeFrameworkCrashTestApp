@@ -1,10 +1,11 @@
 
 rm -rf DynamicFrameworkSample.xcframework
+rm -rf ../DynamicFrameworkSample/DynamicFrameworkSample.xcframework
 
 xcodebuild \
 -arch x86_64 \
 -arch arm64 \
--workspace DynamicFrameworkSample.xcworkspace \
+-project DynamicFrameworkSample.xcodeproj \
 -scheme DynamicFrameworkSample \
 -archivePath archivePathSimulator \
 -derivedDataPath build_data/simulador \
@@ -21,7 +22,7 @@ archive
 
 xcodebuild \
 -arch arm64 \
--workspace DynamicFrameworkSample.xcworkspace \
+-project DynamicFrameworkSample.xcodeproj \
 -scheme DynamicFrameworkSample \
 -archivePath archivePathDevice \
 -derivedDataPath build_data/device \
@@ -40,5 +41,7 @@ xcodebuild -create-xcframework \
 -framework $(pwd)/archivePathSimulator.xcarchive/Products/Library/Frameworks/DynamicFrameworkSample.framework \
 -framework $(pwd)/archivePathDevice.xcarchive/Products/Library/Frameworks/DynamicFrameworkSample.framework \
 -output $(pwd)/DynamicFrameworkSample.xcframework
+
+mv DynamicFrameworkSample.xcframework ../DynamicFrameworkSample/DynamicFrameworkSample.xcframework
 
 rm -rf archivePath* build_data

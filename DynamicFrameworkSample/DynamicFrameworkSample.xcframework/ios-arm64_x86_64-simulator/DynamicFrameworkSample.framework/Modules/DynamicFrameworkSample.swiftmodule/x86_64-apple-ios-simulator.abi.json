@@ -6,8 +6,8 @@
     "children": [
       {
         "kind": "Import",
-        "name": "DependencyAsPod",
-        "printedName": "DependencyAsPod",
+        "name": "TransitiveDependency",
+        "printedName": "TransitiveDependency",
         "declKind": "Import",
         "moduleName": "DynamicFrameworkSample"
       },
